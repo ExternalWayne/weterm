@@ -3,7 +3,7 @@
 第一次做 macOS 上的 SSH/SFTP 客户端，参考了 MobaXterm 的风格。
 还有很多不完善的地方，有什么想法或者遇到问题欢迎提出来 🙌
 
-联系我：optibliu@foxmail.com
+联系我：weterm@foxmail.com
 
 SSH 终端 + SFTP 文件管理 + 远程文件编辑，都集成在一个窗口里。
 
