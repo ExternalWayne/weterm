@@ -91,6 +91,15 @@
 3. 将 Weterm.app 拖入 Applications 文件夹 / Drag Weterm.app to the Applications folder
 4. 首次打开时，如遇安全提示，请前往「系统设置 → 隐私与安全性」允许打开 / On first launch, if blocked, go to System Settings → Privacy & Security to allow
 
+### 无法打开 / Cannot Open
+
+> 如遇到「无法打开 Weterm」或「已损坏，无法打开」提示，可在终端执行以下命令后重新打开：
+> If you see "Weterm cannot be opened" or "is damaged and can't be opened", run this in Terminal and try again:
+>
+> ```bash
+> xattr -d com.apple.quarantine /Applications/WeTerm.app
+> ```
+
 ---
 
 ## 核心功能 / Core Features
