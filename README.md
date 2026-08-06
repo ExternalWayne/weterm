@@ -1,16 +1,16 @@
-# weterm — macOS SSH/SFTP Client
+# Weterm — macOS SSH/SFTP Client
 
 <p align="center">
   <img src="public/weterm-blink.gif" width="64" />
 </p>
 
 <p align="center">
-  <strong>weterm — macOS 平台现代化 SSH/SFTP 客户端</strong><br/>
-  <strong>weterm — A Modern SSH/SFTP Client for macOS</strong>
+  <strong>Weterm — macOS 平台现代化 SSH/SFTP 客户端</strong><br/>
+  <strong>Weterm — A Modern SSH/SFTP Client for macOS</strong>
 </p>
 
 <p align="center">
-  Version 0.9.0 · Νείλος (Nile) · © 2025 Benz lau · weterm@foxmail.com
+  Version 1.0.0 · Νείλος (Nile) · © 2025 Benz lau · weterm@foxmail.com
 </p>
 
 ---
@@ -53,9 +53,9 @@
 
 | 版本 / Version | 适用芯片 / Architecture | 大小 / Size | 说明 / Notes |
 |---|---|---|---|
-| `weterm_0.9.0_aarch64.dmg` | Apple Silicon (M1/M2/M3/M4) | 6.6 MB | 原生 ARM64 / Native ARM64 |
-| `weterm_0.9.0_x86_64.dmg` | Intel Mac | 6.0 MB | 原生 Intel / Native Intel |
-| `weterm_0.9.0_universal.dmg` | 通用 / Universal | 13 MB | 同时支持 Intel 和 Apple Silicon / Supports both Intel & Apple Silicon |
+| `weterm_1.0.0_aarch64.dmg` | Apple Silicon (M1/M2/M3/M4) | 6.6 MB | 原生 ARM64 / Native ARM64 |
+| `weterm_1.0.0_x86_64.dmg` | Intel Mac | 6.0 MB | 原生 Intel / Native Intel |
+| `weterm_1.0.0_universal.dmg` | 通用 / Universal | 13 MB | 同时支持 Intel 和 Apple Silicon / Supports both Intel & Apple Silicon |
 
 ### 系统要求 / System Requirements
 
@@ -88,7 +88,7 @@
 
 1. 下载对应架构的 DMG 文件 / Download the DMG file for your architecture
 2. 双击挂载 DMG / Double-click to mount the DMG
-3. 将 weterm.app 拖入 Applications 文件夹 / Drag weterm.app to the Applications folder
+3. 将 Weterm.app 拖入 Applications 文件夹 / Drag Weterm.app to the Applications folder
 4. 首次打开时，如遇安全提示，请前往「系统设置 → 隐私与安全性」允许打开 / On first launch, if blocked, go to System Settings → Privacy & Security to allow
 
 ---
@@ -97,8 +97,8 @@
 
 ### 概览 / Overview
 
-weterm 是一款受 MobaXterm 启发的 macOS SSH/SFTP 客户端，基于 Tauri v2 构建，融合原生性能与 Web 技术的灵活性。
-weterm is a MobaXterm-inspired macOS SSH/SFTP client built with Tauri v2, blending native performance with web technology flexibility.
+Weterm 是一款受 MobaXterm 启发的 macOS SSH/SFTP 客户端，基于 Tauri v2 构建，融合原生性能与 Web 技术的灵活性。
+Weterm is a MobaXterm-inspired macOS SSH/SFTP client built with Tauri v2, blending native performance with web technology flexibility.
 
 **支持的认证方式 / Supported Authentication Methods:**
 * 密码认证 / Password authentication
@@ -222,8 +222,8 @@ Each column can be independently toggled in Settings:
 
 ## 拖拽传输 / Drag-and-Drop Transfer
 
-拖拽功能是 weterm 的核心亮点之一，支持多种场景下的文件传输。
-Drag-and-drop is one of weterm's core features, supporting file transfers in multiple scenarios.
+拖拽功能是 Weterm 的核心亮点之一，支持多种场景下的文件传输。
+Drag-and-drop is one of Weterm's core features, supporting file transfers in multiple scenarios.
 
 ### 场景 1：从远程拖拽到本地面板 / Scenario 1: Remote → Local Panel
 
@@ -254,20 +254,20 @@ Drag-and-drop is one of weterm's core features, supporting file transfers in mul
 - 自动执行两阶段传输：先下载到临时目录，再上传到目标服务器 / Automatically performs two-phase transfer: downloads to temp directory, then uploads to target server
 - 完成后自动清理临时文件 / Auto-cleans temporary files after completion
 
-### 场景 4：从 Finder 拖入 weterm / Scenario 4: Finder → weterm
+### 场景 4：从 Finder 拖入 Weterm / Scenario 4: Finder → Weterm
 
-**操作：** 从 macOS Finder 将文件/文件夹拖入 weterm 面板
-**Action:** Drag files/folders from macOS Finder into a weterm panel
+**操作：** 从 macOS Finder 将文件/文件夹拖入 Weterm 面板
+**Action:** Drag files/folders from macOS Finder into a Weterm panel
 
 **行为 / Behavior:**
 - 拖入远程面板 → 自动上传 / Drop on remote panel → auto-upload
 - 拖入本地面板 → 自动显示文件 / Drop on local panel → auto-display files
 - 自动解析 `file://` URI 和 HTML5 File API / Auto-parses `file://` URIs and HTML5 File API
 
-### 场景 5：从 weterm 拖出到 Finder / Scenario 5: weterm → Finder
+### 场景 5：从 Weterm 拖出到 Finder / Scenario 5: Weterm → Finder
 
-**操作：** 将文件从 weterm 拖出到 macOS Finder
-**Action:** Drag files from weterm out to macOS Finder
+**操作：** 将文件从 Weterm 拖出到 macOS Finder
+**Action:** Drag files from Weterm out to macOS Finder
 
 **行为 / Behavior:**
 - **本地文件** — 直接提供 `file://` URI，Finder 可立即使用 / **Local files** — Provides `file://` URI directly, Finder can use immediately
@@ -412,7 +412,7 @@ All file transfer tasks are centrally managed in the right-side Task Panel.
 |---|---|
 | **New** | 创建新的文本文档 / Create a new text document |
 | **Open** | 使用 macOS 原生文件对话框打开文件 / Open file via native macOS file dialog |
-| **Save** | 保存到 weterm 内部记事本 / Save to weterm internal notepad |
+| **Save** | 保存到 Weterm 内部记事本 / Save to Weterm internal notepad |
 | **Save As…** | 使用 macOS 原生保存对话框导出 / Export via native macOS save dialog |
 
 工具栏支持自动换行，面板缩窄时按钮自动折行。
@@ -459,8 +459,8 @@ The toolbar wraps automatically when the panel is narrow.
 
 ## 设置 / Settings
 
-点击左上角 weterm 图标 → **⚙ Settings** 打开设置面板。
-Click the weterm icon in the top-left corner → **⚙ Settings** to open the Settings panel.
+点击左上角 Weterm 图标 → **⚙ Settings** 打开设置面板。
+Click the Weterm icon in the top-left corner → **⚙ Settings** to open the Settings panel.
 
 ### 外观设置 / Appearance
 
@@ -515,7 +515,7 @@ Click the weterm icon in the top-left corner → **⚙ Settings** to open the Se
 ### 项目结构 / Project Structure
 
 ```
-weterm/
+Weterm/
 ├── src/                          # 前端源码 / Frontend source
 │   ├── App.tsx                   # 主应用组件 / Main app component
 │   ├── App.css                   # 全局样式 / Global styles
@@ -599,5 +599,5 @@ npm run tauri build
 ---
 
 <p align="center">
-  <sub>weterm v0.9.0 · Νείλος · Built with Tauri v2 + React 19 · © 2025 Benz lau</sub>
+  <sub>Weterm v1.0.0 · Νείλος · Built with Tauri v2 + React 19 · © 2025 Benz lau</sub>
 </p>
